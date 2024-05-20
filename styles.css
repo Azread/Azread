@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+}
+
+h2{
+  padding-bottom: 10px;
+}
+
+header {
+  background-color: #fff;
+  color: #000;
+  padding: 20px 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1001;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #a99a67;
+}
+
+#home {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.home-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.home-content h2 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.home-content p {
+  font-size: 24px;
+  margin: 10px 0 0;
+}
+
+.home-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+#intro {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.company-intro, .member-intro {
+  margin-bottom: 40px;
+}
+
+.member-intro .team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.team-member {
+  text-align: center;
+  max-width: 200px;
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.team-member h3 {
+  margin: 10px 0 5px;
+}
+
+#about, #portfolio, #clients, #contact {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.portfolio-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.portfolio-item {
+  width: calc(33% - 20px);
+  background-color: #f8f8f8;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.portfolio-item h3 {
+  margin-top: 10px;
+}
+
+.portfolio-item video {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-10px);
+}
+
+.clients-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+#about, #clients{
+  background-color: rgb(242, 242, 242);
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 900px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  background-color: #000000;
+  color: white;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+}
+
+.contact-info h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.contact-info p {
+  margin: 10px 0 20px;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.contact-info ul li i {
+  margin-right: 10px;
+}
+
+.contact-form {
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.contact-form h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #a99a67;
+  outline: none;
+}
+
+.contact-form button {
+  padding: 10px;
+  border: none;
+  background-color: #a99a67;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #908358;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .contact-info,
+  .contact-form {
+    max-width: 100%;
+    width: 100%;
+    flex: none;
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px;
+  }
+
+  .contact-form button {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-info,
+  .contact-form {
+    padding: 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+
+  .contact-form button {
+    font-size: 16px;
+  }
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
